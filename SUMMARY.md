@@ -1,29 +1,29 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [About the Author](about-the-author.md)
 
 ## Web App
 
-* [NodeJS](web-app/nodejs.md)
-* [ExpressJS](web-app/expressjs.md)
+* [Node](web-app/node.md)
+* [Express](web-app/express.md)
 * [React](web-app/react.md)
-* [Programming Languages](web-app/programming-languages.md)
+* [Angular](web-app/angular.md)
+* [Testing](web-app/programming-languages.md)
 
-## Continuous Integration \(CI/CD\) <a id="continuous-integration"></a>
+## Continuous Integration
 
-* [CI/CD](continuous-integration/ci-cd.md)
 * [Git](continuous-integration/git.md)
-* [Docker](continuous-integration/docker.md)
-* [Kubernetes](continuous-integration/kubernetes.md)
+* [CI/CD](continuous-integration/ci-cd.md)
 
 ## Cloud Infrastructure
 
 * [Amazon Web Services](cloud-infrastructure/amazon-web-services.md)
+* [Google Cloud Platform](cloud-infrastructure/google-cloud-platform.md)
 
 ## Software Engineering
 
-* [Software Development Lifecycle \(SDLC\)](software-engineering/software-development-lifecycle-sdlc.md)
-* [Microservice Architecture](software-engineering/microservices.md)
+* [Build, Test, Deploy](software-engineering/software-development-lifecycle-sdlc.md)
 * [Teamwork & Collaboration](software-engineering/teamwork-and-collaboration.md)
 * [Code Reviews](software-engineering/code-reviews.md)
 * [Showcasing Your Work](software-engineering/showcasing-your-work.md)
