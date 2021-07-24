@@ -9,6 +9,8 @@
 * [Express](web-app/express.md)
 * [React](web-app/react.md)
 * [Angular](web-app/angular.md)
+* [Material UI](web-app/material-ui.md)
+* [Tailwind CSS](web-app/tailwind-css.md)
 * [Testing](web-app/programming-languages.md)
 
 ## Continuous Integration
