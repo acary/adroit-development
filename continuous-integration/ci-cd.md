@@ -4,6 +4,9 @@
 
 The practice of using automation in building, testing and deploying applications.
 
-* Buddy CI
-  * [https://buddy.works](https://buddy.works/)
+Buddy CI
+
+{% embed url="https://buddy.works" %}
+
+
 

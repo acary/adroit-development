@@ -2,7 +2,9 @@
 
 Material UI is a design system that provides Material Design Components.
 
-Angular: [https://material.angular.io](https://material.angular.io/)
+{% embed url="https://material.angular.io" caption="Material UI for Angular" %}
 
-React: [https://next.material-ui.com](https://next.material-ui.com/)
+{% embed url="https://next.material-ui.com" caption="Material UI for React" %}
+
+
 

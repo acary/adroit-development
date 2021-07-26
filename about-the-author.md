@@ -4,3 +4,7 @@ Andy Cary is a web developer specializing in building usable, performant, reliab
 
 His experience includes building startups from inception to millions of monthly page views, helping startups grow by upgrading functionality and improving application reliability, and contributing to successful Enterprise software development and implementations.
 
+{% embed url="https://andycary.com" %}
+
+
+
