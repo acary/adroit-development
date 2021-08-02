@@ -3,31 +3,28 @@
 * [Welcome](README.md)
 * [About the Author](about-the-author.md)
 
-## Web App
+## Build
 
-* [Node](web-app/node.md)
-* [Express](web-app/express.md)
-* [React](web-app/react.md)
-* [Angular](web-app/angular.md)
-* [Material UI](web-app/material-ui.md)
-* [Tailwind CSS](web-app/tailwind-css.md)
+* [Node](build/node.md)
+* [Express](build/express.md)
+* [React](build/react.md)
+* [Angular](build/angular.md)
+* [Material UI](build/material-ui.md)
+* [Tailwind CSS](build/tailwind-css.md)
 
-## Software Testing <a id="testing"></a>
+## Test
 
-* [Testing](testing/programming-languages.md)
-* [Testing Frameworks](testing/testing-frameworks.md)
-* [Karma](testing/karma.md)
-* [Cypress](testing/cypress.md)
+* [Testing](test/programming-languages.md)
+* [Testing Frameworks](test/testing-frameworks.md)
+* [Karma](test/karma.md)
+* [Cypress](test/cypress.md)
 
-## Continuous Integration
+## Deploy
 
-* [Git](continuous-integration/git.md)
-* [CI/CD](continuous-integration/ci-cd.md)
-
-## Cloud Infrastructure
-
-* [Amazon Web Services](cloud-infrastructure/amazon-web-services.md)
-* [Google Cloud Platform](cloud-infrastructure/google-cloud-platform.md)
+* [CI/CD](deploy/ci-cd.md)
+* [Git](deploy/git.md)
+* [Amazon Web Services](deploy/amazon-web-services.md)
+* [Google Cloud Platform](deploy/google-cloud-platform.md)
 
 ## Software Engineering
 
