@@ -8,5 +8,5 @@ The practice of using automation in building, testing and deploying applications
 
 {% embed url="https://buddy.works" caption="Buddy is an automation platform that is easy and fun to build pipelines. I use it for https://radvatar.com " %}
 
-
+{% embed url="https://www.netlify.com/" caption="Netlify is a serverless platform with automated deployments. I use it for https://theater.andycary.com" %}
 
