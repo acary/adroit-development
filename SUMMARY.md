@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Build, Test, Deploy](software-development-lifecycle-sdlc.md)
 * [About the Author](about-the-author.md)
 
 ## Build
@@ -28,8 +29,6 @@
 
 ## Software Engineering
 
-* [Build, Test, Deploy](software-engineering/software-development-lifecycle-sdlc.md)
 * [Teamwork & Collaboration](software-engineering/teamwork-and-collaboration.md)
-* [Code Reviews](software-engineering/code-reviews.md)
 * [Showcasing Your Work](software-engineering/showcasing-your-work.md)
 

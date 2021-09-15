@@ -1,3 +1,10 @@
+---
+description: >-
+  Even well-engineered software (that performs a function reliably under given
+  conditions) can languish without impacting the world if it is not presented to
+  a receptive audience.
+---
+
 # Showcasing Your Work
 
 {% hint style="info" %}
