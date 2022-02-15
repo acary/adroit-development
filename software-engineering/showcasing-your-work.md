@@ -13,13 +13,16 @@ Demonstrating your work can vary greatly. What is important is telling, showing 
 
 You can view my current websites by visiting the links below.
 
-{% embed url="https://andycary.com/" caption="https://andycary.com" %}
+{% embed url="https://andycary.com/" %}
+https://andycary.com
+{% endembed %}
 
-{% embed url="https://radvatar.com" caption="https://radvatar.com" %}
+{% embed url="https://radvatar.com" %}
+https://radvatar.com
+{% endembed %}
 
 Feel free to send me a thoughtful message on the Contact form on my website: [https://andycary.com/contact](https://andycary.com/contact)
 
 {% embed url="https://andycary.com/contact" %}
 
 Check back for updates as I will be updating sections along the way. Thanks for reading!
-
