@@ -5,7 +5,7 @@
 
 ### Getting Started
 
-![Let's get started.](.gitbook/assets/danielle-macinnes-IuLgi9PWETU-unsplash.jpg)
+![Let's get started.](.gitbook/assets/danielle-macinnes-iulgi9pwetu-unsplash.jpg)
 
 **Although there are many ways to present complex information**, such as the underlying design and construction of interconnected software systems, my goal here is to provide an easy-to-follow guide or roadmap to the mental models, components, and conventions around modern software engineering in the context of building usable, scalable and maintainable web applications.
 
