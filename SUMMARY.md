@@ -36,5 +36,7 @@
 
 ## Software Engineering
 
+* [Project Setup](software-engineering/project-setup/README.md)
+  * [Full Stack MVC](software-engineering/project-setup/full-stack-mvc.md)
 * [Teamwork & Collaboration](software-engineering/teamwork-and-collaboration.md)
 * [Showcasing Your Work](software-engineering/showcasing-your-work.md)
