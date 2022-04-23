@@ -11,8 +11,8 @@ description: >-
 * Initialize local workspace
 * Create Git repository
 * Create and configure JPA project
-* _Create and configure Spring Boot project_
-* _Connect Spring Boot with JPA project_
+* Create and configure Spring Boot project
+* Connect Spring Boot with JPA project
 * _Create and configure MySQL database_
 * _Update Controllers_
 * _Write JUnit test and run smoke test_
@@ -214,3 +214,36 @@ In the `Name`, paste the text from your clipboard as copied from the `persistenc
   * Add: `@Before` and `@After` annotations
 
 Run Gradle refresh again, then commit and push your updates to the project repository.
+
+#### Create and configure Spring Boot project
+
+* Get the package name from the JPA project you just created, i.e. `com.myorganization.myproject`
+* In STS, click `New > Spring Starter Project`
+  * Project name: _Name of your project_
+  * `Gradle buildship 2.x`
+  * Package name: _Must match with JPA project_
+  * Create packages and add empty stub class to each package
+  * Include Spring dependencies:
+    * _Spring Web_
+    * Spring Data JPA
+    * MySQL Driver
+  * Click `Finish`
+
+Configure JPA and JSTL dependencies. In `build.gradle` add the following:
+
+```
+implementation 'javax.servlet:jstl:1.2'
+implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+```
+
+Save and perform Gradle refresh.
+
+#### **Connect Spring Boot and JPA Projects**
+
+* JPA project**:** `settings.gradle` > copy project name, i.e. `'JPAMyProject'`
+* Boot project: `settings.gradle` > add: `includeFlat 'JPAMyProject'`
+* Boot project: `build.gradle` > add: `implementation project(':JPAM`yProject`')`
+
+Save all files and perform another Gradle refresh. Verify by expanding the `Projects and External Dependencies` folder (in the Spring Boot project) and see `JPAMyProject` at the bottom.
+
+Commit (`Create Spring Boot MVC Project, add JPA Project dependency`) and push.
