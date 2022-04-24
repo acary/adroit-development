@@ -242,8 +242,131 @@ Save and perform Gradle refresh.
 
 * JPA project**:** `settings.gradle` > copy project name, i.e. `'JPAMyProject'`
 * Boot project: `settings.gradle` > add: `includeFlat 'JPAMyProject'`
-* Boot project: `build.gradle` > add: `implementation project(':JPAM`yProject`')`
+* Boot project: `build.gradle` > add: `implementation project(':JPAMyProject')`
 
 Save all files and perform another Gradle refresh. Verify by expanding the `Projects and External Dependencies` folder (in the Spring Boot project) and see `JPAMyProject` at the bottom.
 
 Commit (`Create Spring Boot MVC Project, add JPA Project dependency`) and push.
+
+#### **Create web folder**
+
+Create the `webapp/WEB-INF` folder under `src/main`
+
+* In Package Explorer, expand `src/main` and right-click to select `New > Folder` and give it a name: `webapp/WEB-INF`&#x20;
+* In it, create `New > Other > JSP File` and give it a name: `home`
+* Add a tag to pass data into from the backend: `${DEBUG}`
+
+#### Create Packages
+
+Packages are folders that house separate concerns in a project. Create the following packages in the same level as `com.myorganization.myproject:`
+
+* _Controllers_
+  * `com.myorganization.myproject.controllers`
+    * `HomeController.java`
+* _Data_
+  * `com.myorganization.myproject.data`
+    * `UserDAO.java`
+    * `UserDaoJpaImpl.java`
+
+**Controllers**
+
+```
+new HomeController
+@Controller
+@RequestMapping(path = {"/", "home.do"})
+```
+
+**Data**
+
+In the `data` package, select `New > Interface` and give it a name (i.e. `UserDAO`
+
+Add a method to find a user by ID (import with `CMD + O`)
+
+`User findById(int userId);`
+
+In the package explorer, expand and right-click the purple `I` icon and select `New > Class` and give it a name:
+
+`UserDaoJpaImpl`
+
+* `@Service`
+* `@Transactional`&#x20;
+* `@PersistenceContext`&#x20;
+  * `private Entity Manager em;`
+
+File `UserDaoImpl.java`
+
+```
+package com.myorganization.myproject.data;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import com.myorganization.myproject.entities.User;
+
+@Service
+@Transactional
+public class UserDaoImpl implements UserDAO {
+
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public User findById(int userId) {
+		return em.find(User.class, userId);
+	}
+
+}
+```
+
+#### Update application.properties
+
+File `src/main/resources/application.properties`&#x20;
+
+```
+#### PORT CONFIG ####
+##### Alternate Tomcat port
+server.port=8081
+
+
+#### JSP VIEW RESOLVER ####
+##### Include if you used a ViewResolver to shorten the names of your views
+spring.mvc.view.prefix: /WEB-INF/
+spring.mvc.view.suffix: .jsp
+
+
+#### MYSQL DATASOURCE ####
+##### Configure to match your Database
+spring.datasource.url=jdbc:mysql://localhost:3306/FIXME?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=US/Mountain
+spring.datasource.username=FIXME
+spring.datasource.password=FIXME
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+#### LOGGING ####
+##### Set to WARN for fewer log messages
+logging.level.root=WARN
+logging.level.org.springframework.web=DEBUG
+logging.level.org.hibernate.SQL=WARN
+logging.level.org.hibernate.type=WARN
+spring.jpa.show-sql=true
+
+
+#### TOMCAT ####
+spring.datasource.tomcat.max-active=10
+spring.datasource.dbcp2.max-idle=8
+spring.datasource.dbcp2.max-wait-millis=10000
+spring.datasource.dbcp2.min-evictable-idle-time-millis=1000
+spring.datasource.dbcp2.min-idle=8
+spring.datasource.dbcp2.time-between-eviction-runs-millis=1
+```
+
+_Commit and push_
+
+`git commit -m 'Configure Spring, stub MVC code'`
+
+`git pull`&#x20;
+
+`git push`
